@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    Font-family: Consolas, monaco, monospace;
+    color: #98DFEA;
+}
+
+html, body{
+    height: 100%;
+    background-color: #07020D;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    
+}
+
+.content{
+    width: 40%;
+    height: 85%;
+    border-radius: 20px;
+    border: 3px solid #244F26;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logar, .cadastrar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vh;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+form{
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.input h3{
+    text-align: left;
+    margin-left: 15%;
+}
+
+.logar .input input, .cadastrar .input input{
+   width: 70%;
+   height: 30px;
+   border-radius: 5px;
+   border: 0px;
+   color: #07020D;
+   padding-left: 10px;
+
+}
+
+.mostrar {
+    width: 100%;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+.mostrar p{
+    display: inline-block;
+}
+
+
+.logar .submit input, .cadastrar .submit button{
+    border-radius: 15px;
+    border: 2px solid #244F26;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    background-color: #07020D;
+    transition: background-color .5s;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.submit input:hover, .submit button:hover{
+    color: #07020D;
+    background-color: #98DFEA;;
+}
+
+.logar .gotoregister, .cadastrar .gotologin{
+    width: 70%;
+}
+
+.cadastrar .gotologin{
+    margin-left: 15%;
+}
+
+
+.gotologin button, .gotoregister button{
+    border-radius: 15px;
+    border: 2px solid #244F26;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 30%;
+    background-color: #07020D;
+    transition: background-color .5s;
+}
+
+
+.gotologin button:hover, .gotoregister button:hover{
+    color: #07020D;
+    background-color: #98DFEA;;
+}
+
+.cadastrar{
+    display: none;
+}
+

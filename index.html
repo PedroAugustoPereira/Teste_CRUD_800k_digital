@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--meta tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!--fim meta tags-->
+
+        <title>800k - TESTE</title>
+        <!--Developer: Pedro Augusto Pereira-->  
+    </head>
+
+    <body>
+        
+
+        <div class="container">
+            <div class="content">
+                <section class="logar">
+                    <div class="title">
+                        <h2>LOGIN</h2>
+                    </div><!--title-->
+                    
+                    <form method="post" action="login.php">
+                        <div class="input nome">
+                            <h3>Nome completo</h3>
+                            <input type="text" name="nome_logar" id="nome_logar" autocomplete="off"/>
+                        </div><!--input nome-->
+                        
+                        <br>
+
+                        <div class="input email">
+                             <h3>Email</h3>
+                             <input type="email" name="email_logar" id="email_logar" autocomplete="off"/>
+                        </div><!--input email-->
+                       
+                        <br>
+
+                        <div class="input senha">
+                            <h3>Senha</h3>
+                            <input type="password" name="senha_logar" id="senha_logar" autocomplete="off"/>
+                        </div><!--input senha-->
+
+                        <div class="mostrar">
+                            <input type="checkbox" onclick="senha_trocar_login()" />
+                            <p>Mostrar senha</p>
+                        </div><!--input nome-->
+                        
+                        
+
+                        <div class="submit">
+                            <input type="submit" name="logar" value="Login" id="btn_logar"/>
+                        </div><!--submit-->
+
+                        <br>
+                    </form><!--form login-->
+
+                    <div class="gotoregister">
+                        <h3>Não possui uma conta? <button id="btn_gotoRegistrar">Registre-se já!</button></h3>
+                    </div><!--gotoregister-->
+
+                    
+
+                </section><!--logar-->
+            
+                <section class="cadastrar">
+                    <div class="title">
+                        <h2>CADASTRAR</h2>
+                    </div><!--title-->
+                    
+                    <form method="post">
+                        <div class="input nome-registro">
+                            <h3>Nome completo</h3>
+                            <input type="text" name="nome" id="nome_registro" autocomplete="off"/>
+                        </div><!-- nome-registro-->
+
+                        <br>
+
+                        <div class="input email-registro">
+                            <h3>Email</h3>
+                            <input type="email" name="email" id="email_registro"/>
+                        </div><!--input email-registro-->
+                        
+                        <br>
+
+                        <div class="input endereco-registro">
+                            <h3>Endereço</h3>
+                            <input type="text" name="endereco" id="endereco_registro" autocomplete="off"/>
+                        </div><!--input endereco-registro-->
+                        
+                        <br>
+
+                        <div class="input senha-registro">
+                            <h3>Senha</h3>
+                            <input type="password" name="senha" id="senha_registro" autocomplete="off"/>                            
+                        </div><!--input senha-registro-->
+                        
+                        <div class="mostrar">
+                            <input type="checkbox" onclick="senha_trocar_registro()" id="mostrar_senha" /> 
+                            <p>Mostrar senha</p>
+                        </div><!--mostrar-->
+
+                        <div class="submit">
+                            <button type="button" name="cadastrar" value="Cadastrar" id="btn_cadastrar">Cadastrar</button>
+                        </div><!--submit-->
+                        
+                        <br>
+                    </form><!--form de registro-->
+
+                    <div class="gotologin">
+                        <h3>Ja possui uma conta? <button id="btn_gotoLogar">Logue já!</button></h3>
+                    </div><!--gotologin-->
+
+                </section><!--cadastrar-->
+            </div><!--content-->
+        </div><!--container-->
+
+
+        <!--SCRIPTS-->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="js/data_register.js"></script>
+        <script src="js/control.js"></script>
+
+        <!--FIM DO SCRIPT-->
+        
+
+    </body>
+
+</html>

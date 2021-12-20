@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    Font-family: Consolas, monaco, monospace;
+    color: #98DFEA;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+    background-color: #07020D;
+}
+
+/*inicio de header*/
+
+header{
+    background-color: rgb(11, 5, 37);
+    width: 100%;
+    padding: 2% 5%;
+}
+
+header .box .msg{
+    float: left;
+}
+
+header .box .sair{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+/*fim de header*/
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.content{
+    width: 80%;
+    height: 85%;
+    border-radius: 20px;
+    border: 3px solid #244F26;
+    padding: 1% 1%;  
+}
+
+/*css de tabela*/
+
+.table{
+    border-radius: 10px;
+    border: 3px solid rgb(11, 5, 37);
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-height: 400px;
+}
+
+table{
+    width: 100%;
+    height: 100%;  
+}
+
+th, td{
+    text-align: center;
+    border: 4px solid #07020D;
+}
+
+
+.lixeira img{
+    cursor: pointer;
+    width: 20px;
+    margin-right: 5px;
+}
+.icon_editar img{
+    cursor: pointer;
+    width: 30px;
+}
+
+/*fim de css de tabela*/
+
+
+/*inicio de estilos na edição*/
+.editar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vh;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-top: -20px;
+}
+
+form{
+    width: 100%;
+    margin-top: -30px;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.input h3{
+    text-align: left;
+    margin-left: 15%;
+}
+
+.editar .input input{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    color: #07020D;
+    padding-left: 10px;
+ 
+ }
+
+ .mostrar {
+    width: 100%;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+.mostrar p{
+    display: inline-block;
+}
+
+ .editar .submit input{
+    border-radius: 15px;
+    border: 2px solid #244F26;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    background-color: #07020D;
+    transition: background-color .5s;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+.submit input:hover{
+    color: #07020D;
+    background-color: #98DFEA;
+}
+
+.edit_fechar{
+    text-align: left;
+}
+
+.fechar img{
+    width: 30px;
+    cursor: pointer;
+}
+
+
+.confirm-delete{
+    display:none;
+    margin-top: 20px;
+}
+
+.confirm-delete #confirmar, .confirm-delete #cancelar{
+    border-radius: 15px;
+    border: 2px solid #244F26;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    background-color: #07020D;
+    transition: background-color .5s;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.confirm-delete #confirmar:hover, .confirm-delete #cancelar:hover{
+    color: #07020D;
+    background-color: #98DFEA;
+}
+
+.editar{
+    display: none;
+}
+/*fim de estilos na edição*/
