@@ -63,8 +63,9 @@
                     <button id="cancelar" >Cancelar</button>
                 </div><!--confirm-delete-->
             </section><!--listagem-->
-
+        </div><!--contetn-->
             
+        <div class="second-content">
             <section class="editar">
                     
                     <div class="edit_fechar">
@@ -104,7 +105,7 @@
                         
                     </form><!--form de edição de usuários-->
             </section><!--editar-->
-        </div><!--content-->
+        </div><!--second content-->
     </div><!--container-->
 
     <!--SCRIPTS-->
