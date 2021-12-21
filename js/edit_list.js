@@ -34,14 +34,14 @@ function controlEdit(){
         requestEdit(id_request);
 
         if(flag_nome && flag_senha && flag_endereco && flag_email){
-            $(".editar").fadeOut(200, function(){
-                $(".listagem").fadeIn(200, resetInput());
+            $(".second-content").fadeOut(200, function(){
+                $(".content").fadeIn(200, resetInput());
             })  
         }
     })
     $("#btn_fechar").on("click", function(){
-        $(".editar").fadeOut(200, function(){
-            $(".listagem").fadeIn(200, resetInput());
+        $(".second-content").fadeOut(200, function(){
+            $(".content").fadeIn(200, resetInput());
         })
     })
 }
@@ -151,8 +151,8 @@ function requestPrintList(){
             for(i = 0 ; i < edit_array.length ; i++){
                 edit_array[i].addEventListener("click", function(){
                     id_request = this.getAttribute('id');
-                    $('.listagem').fadeOut(200, function(){
-                        $('.editar').fadeIn(200);
+                    $('.content').fadeOut(200, function(){
+                        $('.second-content').fadeIn(200);
                     })
                 }) 
             }
