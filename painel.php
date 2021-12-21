@@ -92,7 +92,7 @@
                         <br>
                         <div class="input senha">
                             <h3>Senha</h3>
-                            <input type="text" name="senha" id="senha_editar" autocomplete="off"/>
+                            <input type="password" name="senha" id="senha_editar" autocomplete="off"/>
                         </div><!--input senha-->
                         <div class="mostrar">
                             <input type="checkbox" onclick="senha_trocar_edit()" />
