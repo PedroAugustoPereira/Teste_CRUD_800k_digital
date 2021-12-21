@@ -59,8 +59,15 @@ $('#btn_cadastrar').on("click", () => {
             },
             success: function(msg){
                 alert("Usuário cadastrado com sucesso");
-                $(".cadastrar").css("display", "none");
-                $(".logar").css("display", "block");
+
+                $(".cadastrar").fadeOut(200, function(){
+                    $('.logar').fadeIn(200, function(){
+                        document.getElementById("nome_registro").value = "";
+                        document.getElementById("email_registro").value = "";
+                        document.getElementById("endereco_registro").value = "";
+                        document.getElementById("senha_registro").value = "";
+                    })
+                });
             }
         }).done((e) => {
         })
