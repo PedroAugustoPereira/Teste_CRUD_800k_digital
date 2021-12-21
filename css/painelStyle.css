@@ -4,12 +4,14 @@
     box-sizing: border-box;
     Font-family: Consolas, monaco, monospace;
     color: #98DFEA;
+
 }
 
 html, body{
     height: 100%;
-    overflow: hidden;
     background-color: #07020D;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /*inicio de header*/
@@ -47,9 +49,16 @@ header .box .sair{
 
 .content{
     width: 80%;
-    height: 85%;
+    height: auto;
     border-radius: 20px;
+    padding: 1% 1%;  
     border: 3px solid #244F26;
+}
+
+.second-content{
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
     padding: 1% 1%;  
 }
 
@@ -90,6 +99,7 @@ th, td{
 /*inicio de estilos na edição*/
 .editar{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,10 +107,11 @@ th, td{
 }
 
 .title{
-    font-size: 5vh;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 2%;
-    margin-top: -20px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 form{
@@ -160,7 +171,8 @@ form{
 }
 
 .edit_fechar{
-    text-align: left;
+    width: 100%;
+    text-align: right;
 }
 
 .fechar img{
@@ -195,7 +207,84 @@ form{
     background-color: #98DFEA;
 }
 
-.editar{
+.second-content{
     display: none;
 }
 /*fim de estilos na edição*/
+
+@media (max-width: 530px){
+    header .box .msg{
+        float: none;
+        text-align: center;
+    }
+    
+    header .box .sair{
+        float: none;
+        text-align: center;
+    }
+    .clear{
+        clear: both;
+    }
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 930px){
+    .content{
+        width: 85%;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .content{
+        width: 95%;
+    }
+    .title{
+        top: -20px;
+    }
+   
+}
+
+@media (max-height: 600px){
+    .second-content{
+        width: 100%;
+    }
+    html, body{
+        overflow-y:auto;
+    }
+
+    .submit{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-height: 620px){
+    .content{
+        position: relative;
+        top: -60px;
+        margin-top: 30px;
+    }
+
+    .table{
+        max-height: 200px;
+    }
+    
+}
+
+@media (max-height: 470px){
+    .table{
+        max-height: 180px;
+    }
+    
+}
+
+@media (max-height: 360px){
+    .content{
+        bottom: 50px;
+    }
+    .table{
+        max-height: 80px;
+    }
+}
